@@ -9,6 +9,7 @@ For this assignment, you are going to write your first assembler programs by wri
 ## Build Setup
 
 Each program below is to be written and tested on the virtual machine given in class. </br>
+
 For example, to compile program 1, you will enter the following commands:  
 ```bash
 # The Nasm assembler: compile using the nasm assembler
