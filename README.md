@@ -4,7 +4,7 @@
 
 ### Introduction
 
-For this assignment, you are going to write your first assembler programs by writing some simple code to use the ADD, MOV, SUB, IMUL, and IDIV instructions. 
+You are going to write your first assembler programs by writing some simple code to use the ADD, MOV, SUB, IMUL, and IDIV instructions. 
 
 ## Build Setup
 
