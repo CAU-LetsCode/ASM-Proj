@@ -22,20 +22,20 @@ SECTION .text	;Code Segment
 	GLOBAL _start
 
 _start:	;Program prompt
-	mov eax, SYS_WRITE
-	mov ebx, STDOUT
+	mov eax, 4 ;SYS_WRITE
+	mov ebx, 1 ;STDOUT
 	mov ecx, progMsg
 	mov edx, lenProgMsg
 	int 80h
 	;User prompt
-	mov eax, SYS_WRITE
-	mov ebx, STDOUT
+	mov eax, 4 ;SYS_WRITE
+	mov ebx, 1 ;STDOUT
 	mov ecx, userMsg
 	mov edx, lenUserMsg
 	int 80h
 	;Read and store the user input
-	mov eax, SYS_READ
-	mov ebx, STDIN
+	mov eax, 3 ;SYS_READ
+	mov ebx, 0 ;STDIN
 	mov ecx, two_char_string
 	mov edx, 3
 	int 80h
@@ -48,19 +48,19 @@ _start:	;Program prompt
 
 
 	;Output the message
-	mov eax, SYS_WRITE
-	mov ebx, STDOUT
+	mov eax, 4 ;SYS_WRITE
+	mov ebx, 1 ;STDOUT
 	mov ecx, answerMsg
 	mov edx, lenAnswerMsg
 	int 80h
 	;Output the number entered
-	mov eax, SYS_WRITE
-	mov ebx, STDOUT
+	mov eax, 4 ;SYS_WRITE
+	mov ebx, 1 ;STDOUT
 	mov ecx, two_char_string
 	mov edx, 3
 	int 80h
 
 	;Exit code
-	mov eax, SYS_EXIT
+	mov eax, 1 ;SYS_EXIT
 	mov ebx, 0
 	int 80h
